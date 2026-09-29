@@ -49,8 +49,28 @@ The following address changes were made:
 - FRITZ!Box  - 192.168.178.1
 - Homelab    - 192.168.178.50
 - XT9        - 192.168.178.31
+
 #### Update 17:47
 - Verified homelab connectivity after converting XT9 to AP.
 - 192.168.178.1 - Default gateway is reachable with 0% packet loss
-- 1.1.1.1 - Internet connectivity without DNS, 0% packet loss
+- 1.1.1.1 - Internet connectivity without DNS resolution, 0% packet loss
 - google.com - DNS resolution and internet connectivity with 0% packet loss
+
+#### Update 18:18
+- Established the current homelab hardware/system resources.
+- Commands:
+    - hostnamectl
+    - free -h
+    - lsblk
+
+- Hostname: `acer-homelab`
+- OS: Debian 13 (Trixie)
+- Kernel: `6.12.107+deb13-amd64`
+- Architecture: x86-64
+- Hardware: Acer Swift SF314-52
+- RAM: 7.6 GiB total, 7.2 GiB available
+- Swap: 6.2 GiB total, currently unused
+- Storage: 119.2 GB SSD
+  - EFI: 976 MB
+  - Root: 112.1 GB
+  - Swap: 6.2 GB
