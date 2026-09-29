@@ -46,5 +46,11 @@ A centralised repository for documenting the config, deployment, and maintenance
 - The homelab and XT9 have been assigned permanent IPv4 addresses now.
 
 The following address changes were made:
-- FRITZ!Box  → 192.168.178.1
-- Homelab    → 192.168.178.50
+- FRITZ!Box  - 192.168.178.1
+- Homelab    - 192.168.178.50
+- XT9        - 192.168.178.31
+#### Update 17:47
+- Verified homelab connectivity after converting XT9 to AP.
+- 192.168.178.1 - Default gateway is reachable with 0% packet loss
+- 1.1.1.1 - Internet connectivity without DNS, 0% packet loss
+- google.com - DNS resolution and internet connectivity with 0% packet loss
