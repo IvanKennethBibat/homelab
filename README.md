@@ -74,3 +74,8 @@ The following address changes were made:
   - EFI: 976 MB
   - Root: 112.1 GB
   - Swap: 6.2 GB
+
+- systemctl is service-oriented, focusing on systemd units/services.
+- ps is process-oriented, giving a low-level overview of all processes currently running on the machine.
+    - `ps aux --sort=-%mem` sorts by memory usage.
+    - `ps aux --sort=-%cpu` sorts by CPU usage.
