@@ -39,3 +39,12 @@ A centralised repository for documenting the config, deployment, and maintenance
 - Debian was chosen over Ubuntu Server for its leaner resource usage (7% idle RAM usage vs 15% RAM usage with Ubuntu); with the constraints of the hardware with 8GB RAM the difference in RAM usage is meaningful 
 - (Source: https://www.techaddressed.com/features/4-reasons-debian-vs-ubuntu-server/).
 - My network is double NAT, meaning that the XT9 router is itself a router behind the FritzBox router, creating two separate NAT layers.
+
+#### Update 17:09
+- Double NAT issue was resolved by converting XT9 from router mode to Access Point (AP) mode, making its use to be exclusively for WiFi/Ethernet connectivity.
+- The FritzBox now exclusively handles routing, NAT, and DHCP.
+
+The following address changes were made:
+- FRITZ!Box  → 192.168.178.1
+- XT9        → 192.168.178.31
+- Homelab    → 192.168.178.50
