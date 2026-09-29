@@ -9,15 +9,15 @@ A centralised repository for documenting the config, deployment, and maintenance
 - 119 GB SSD
 
 ## 2. Network
-- FRITZ!Box — upstream router
-- ASUS XT9 — router
-- Homelab LAN: 192.168.50.0/24
-- XT9 gateway (LAN): 192.168.50.1
-- XT9 WAN: 192.168.178.31
-- Homelab: 192.168.50.5
-- Interface: wlp1s0
-- FritzBox network: 192.168.178.0/24
-- The XT9 creates a separate '192.168.50.0/24' network behind the FritzBox.
+- FRITZ!Box — primary router
+- ASUS XT9 — Access Point (AP)
+- Homelab LAN: `192.168.178.0/24`
+- FRITZ!Box gateway: `192.168.178.1`
+- XT9: `192.168.178.31`
+- Homelab: `192.168.178.50`
+- Interface: `wlp1s0`
+- DHCP, routing, and NAT are handled by the FRITZ!Box
+- The XT9 provides WiFi/Ethernet connectivity in AP mode
 
 ## 3. Debian
 - Debian 13 Stable
@@ -43,8 +43,8 @@ A centralised repository for documenting the config, deployment, and maintenance
 #### Update 17:09
 - Double NAT issue was resolved by converting XT9 from router mode to Access Point (AP) mode, making its use to be exclusively for WiFi/Ethernet connectivity.
 - The FritzBox now exclusively handles routing, NAT, and DHCP.
+- The homelab and XT9 have been assigned permanent IPv4 addresses now.
 
 The following address changes were made:
 - FRITZ!Box  → 192.168.178.1
-- XT9        → 192.168.178.31
 - Homelab    → 192.168.178.50
